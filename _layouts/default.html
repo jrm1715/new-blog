@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Default</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <div class="wrapper">
+
+<head>
+  <meta charset="utf-8">
+  <title>Default</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
       <header>
         <div class="avatar-container">
           <a href="{{ site.baseurl }}/" class="avatar"><img src="{{ site.avatar }}" /></a>
@@ -15,22 +18,25 @@
         <p>{{ site.description }}</p>
         <nav role="navigation">
           <ul>
-            <li><a href=" "> About </a></li>
-            <li><a href=" "> Projects </a></li>
-            <li><a href="/blog"> Blog </a></li>
-            <li><a href=" "> Contact </a></li>
+            <li class="nav"><a href=" "> About </a></li>
+            <li class="nav"><a href=" "> Projects </a></li>
+            <li class="nav"><a href="/blog"> Blog </a></li>
+            <li class="nav"><a href=" "> Contact </a></li>
           </ul>
         </nav>
       </header>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
 
-         {{ content }}
+    <footer>
+      <p>
+        <small>©2014 Name Here </small><br />
+        <small>Made with <a href="http://jekyllrb.com/">Jekyll</a> &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+      </p>
+    </footer>
+  </div>
+</body>
 
-        <footer>
-          <p>
-            <small>©2014 Name Here </small><br />
-            <small>Made with <a href="http://jekyllrb.com/">Jekyll</a> &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
-          </p>
-        </footer>
-      </div>
-  </body>
 </html>
