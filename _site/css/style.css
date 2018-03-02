@@ -9,23 +9,36 @@
                        "... footer ...";
 }
 
-li {
+ .avatar-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+.nav ul li {
   display: inline;
 }
 
-li a {
-  padding: 14px 16px;
+.nav ul li a {
+  text-decoration: none;
+  padding: 2em 1em;
+
 }
 
-footer {
-  grid-area: footer;
-  text-align: center;
+.nav ul li a:hover {
+
 }
+
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   grid-area: header;
   text-align: center;
 }
